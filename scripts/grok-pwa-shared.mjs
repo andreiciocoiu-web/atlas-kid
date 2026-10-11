@@ -151,7 +151,6 @@ export function stripInstallParams(url) {
   return rest ? `${path}?${rest}` : path;
 }
 
-
 export function renderInstallPageHtml(template, { host, url } = {}) {
   return String(template)
     .replaceAll("{{APP_NAME}}", escapeHtml(appNameFromHost(host)))
